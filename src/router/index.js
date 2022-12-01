@@ -1,18 +1,18 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
 import Home from '../components/Home.vue';
-import UserList from '../components/products/UserList.vue';
-import CreateCompany from '../components/products/CreateCompany.vue';
-import EditUsers from '../components/products/EditUsers.vue';
-import CompanyList from '../components/products/CompanyList.vue';
-import CompanyList from '../components/products/CompanyList.vue';
+import UserList from '../components/Users/UserList.vue';
+import CreateCompany from '../components/Companies/CreateCompany.vue';
+import EditUsers from '../components/Users/EditUser.vue';
+import CompanyList from '../components/Companies/CompanyList.vue';
+import EditCompany from '../components/Companies/EditCompany.vue';
 
 
 const routes = [
   { path: '/', component: Home },
   { path: '/EditUsers/:id', component: EditUsers, props: true },
   { path: '/UserList', component: UserList, props: true },
-  { path: '/EditCompany/:id', component: EditCompanies, props: true },
+  { path: '/EditCompany/:id', component: EditCompany, props: true },
   { path: '/CompanyList', component: CompanyList },
   { path: '/CreateCompany', component: CreateCompany },
 ];
