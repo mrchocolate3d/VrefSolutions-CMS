@@ -6,7 +6,7 @@ import CreateCompany from '../components/Companies/CreateCompany.vue';
 import EditUsers from '../components/Users/EditUser.vue';
 import CompanyList from '../components/Companies/CompanyList.vue';
 import EditCompany from '../components/Companies/EditCompany.vue';
-
+import Login from '../components/Login.vue'
 
 const routes = [
   { path: '/', component: Home },
@@ -15,6 +15,7 @@ const routes = [
   { path: '/EditCompany/:id', component: EditCompany, props: true },
   { path: '/CompanyList', component: CompanyList },
   { path: '/CreateCompany', component: CreateCompany },
+  { path: '/Login', component: Login },
 ];
 
 const router = createRouter({
