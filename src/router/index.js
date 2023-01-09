@@ -16,6 +16,8 @@ const routes = [
   { path: '/CompanyList', component: CompanyList },
   { path: '/CreateCompany', component: CreateCompany },
   { path: '/Login', component: Login },
+  { path: '/EditUser', component: EditUsers, props: true },
+
 ];
 
 const router = createRouter({

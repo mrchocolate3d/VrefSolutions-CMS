@@ -36,7 +36,7 @@
 export default {
   name: "EditUser",
   props: {
-    id: Guid,
+    id: Number,
   },
   data() {
     return {

@@ -4,25 +4,25 @@
         <form ref="form">
           <h2 class="mt-3 mt-lg-5">Edit User</h2>
           <h5 class="mb-4"></h5>
-  
+            
           <div class="input-group mb-3">
             <span class="input-group-text">First Name</span>
-            <input type="text" class="form-control" v-model="user.Firstname" />
+            <input type="text" class="form-control"  />
           </div>
   
           <div class="input-group mb-3">
             <span class="input-group-text">Last Name</span>
-            <input type="text" class="form-control" v-model="user.Lastname" />
+            <input type="text" class="form-control"/>
           </div>
   
           <div class="input-group mb-3">
             <span class="input-group-text">Email</span>
-            <input type="text" class="form-control" v-model="user.Email" />
+            <input type="text" class="form-control" />
           </div>
   
           <div class="input-group mb-3">
             <span class="input-group-text">Role</span>
-            <input type="text" class="form-control" v-model="user.Role" />
+            <input type="text" class="form-control"/>
           </div>
 
           <div class="input-group mt-4">
@@ -43,11 +43,12 @@
   </template>
   
   <script>
-  export default {
+  import user from "./User.vue";
+  export default { 
     name: "EditUser",
-    props: {
-      id: Guid,
-    },
+    components: {
+    user,
+  },
     data() {
       return {
         product: {

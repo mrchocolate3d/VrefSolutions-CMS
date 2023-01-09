@@ -7,11 +7,11 @@
               >UserList</router-link
               >
             </li>      
-            <li class="nav-item">
+            <!--<li class="nav-item">
               <router-link to="/EditUser" class="nav-link" active-class="active"
               >EditUser</router-link
               >
-          </li>      
+          </li>      --->
           <li class="nav-item">                      
               <router-link to="/CompanyList" class="nav-link" active-class="active"
               >CompanyList</router-link
